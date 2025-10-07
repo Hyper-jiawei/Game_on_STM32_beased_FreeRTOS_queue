@@ -315,18 +315,17 @@ int IRReceiver_Read(uint8_t *pDev, uint8_t *pData)
  * 输入参数： code - 按键码
  * 输出参数： 无
  * 返 回 值： NULL - 未识别的按键码; 其他值 - 按键名字
- * 修改日期：      版本号     修改人	      修改内容
- * -----------------------------------------------
- * 2023/08/04	     V1.0	  韦东山	      创建
+
  ***********************************************************************/
+ /*按照自己的遥控器创建于20251007*/
 const char *IRReceiver_CodeToString(uint8_t code)
 {
-    const uint8_t codes[]= {0xa2, 0xe2, 0x22, 0x02, 0xc2, 0xe0, 0xa8, 0x90, \
-                            0x68, 0x98, 0xb0, 0x30, 0x18, 0x7a, 0x10, 0x38, \
-                            0x5a, 0x42, 0x4a, 0x52, 0x00};
-    const char *names[]= {"Power", "Menu", "Test", "+", "Return", "Left", "Play", "Right", \
-                            "0", "-", "C", "1", "2", "3", "4", "5", \
-                            "6", "7", "8", "9", "Repeat"};
+    const uint8_t codes[]= {0xa2, 0x62, 0xe2, 0x22, 0x2, 0xc2, 0xe0, 0xa8, \
+                            0x90, 0x68, 0x98, 0xb0, 0x30, 0x18, 0x7a, 0x10, \
+                            0x38, 0x5a, 0x42, 0x4a, 0x52};
+    const char *names[]= {"CH-", "CH", "CH+", "<--", "-->", "Pause", "-", "+", \
+                            "EQ", "0", "100+","200+","1", "2", "3", "4",\
+							 "5", "6", "7", "8", "9"};
     int i;
     
     for (i = 0; i < sizeof(codes)/sizeof(codes[0]); i++)

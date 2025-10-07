@@ -3062,7 +3062,7 @@ Removing Unused input sections from the image.
     Removing driver_ir_receiver.o(i.IRReceiver_Read), (44 bytes).
     Removing driver_ir_receiver.o(i.IRReceiver_Test), (176 bytes).
     Removing driver_ir_receiver.o(.constdata), (84 bytes).
-    Removing driver_ir_receiver.o(.conststring), (115 bytes).
+    Removing driver_ir_receiver.o(.conststring), (94 bytes).
     Removing driver_ir_sender.o(.rev16_text), (4 bytes).
     Removing driver_ir_sender.o(.revsh_text), (4 bytes).
     Removing driver_ir_sender.o(.rrx_text), (6 bytes).
@@ -3182,7 +3182,7 @@ Removing Unused input sections from the image.
     Removing dfixul.o(.text), (48 bytes).
     Removing cdrcmple.o(.text), (48 bytes).
 
-1027 unused section(s) (total 79140 bytes) removed from the image.
+1027 unused section(s) (total 79119 bytes) removed from the image.
 
 ==============================================================================
 

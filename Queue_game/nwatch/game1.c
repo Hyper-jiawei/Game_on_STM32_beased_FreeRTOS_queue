@@ -97,12 +97,12 @@ static void platform_task(void *params)
                 data = last_data;
             }
             
-            if (data == 0xe0) /* Left */
+            if (data == 0x22) /* Left */
             {
                 btnLeft();
             }
 
-            if (data == 0x90)  /* Right */
+            if (data == 0x2)  /* Right */
             {
                 btnRight();
             }
